@@ -1,0 +1,1018 @@
+:root {
+    --bg_color: #0b0232;
+    --font-color: white;
+    --font_color_2: #ED6AB8;
+    --button_color: #642AA5;
+    --card_color: #4B3272;
+    --page_width: 90vw;
+    --page_height: 90%;
+    --font_H_size: 7vw;
+    --font_T_size: 4vw;
+    --btn_width: 20vh;
+    --btn_height: 5vh;
+    --card-text-color: #9664E4;
+}
+
+/* poppins*/
+@font-face {
+    font-family: "poppins";
+    src: url(Poppins-Regular.ttf);
+}
+
+/* cursive */
+@font-face {
+    font-family: "curve";
+    src: url(Cedarville-Cursive.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "poppins";
+    background: var(--bg_color);
+
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: var(--bg_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pc-port-text {
+    display: block;
+    color: white;
+}
+
+.page1 {
+    width: var(--page_width);
+    height: var(--page_height);
+    color: white;
+    display: none;
+}
+
+.page1 h1 {
+    font-size: var(--font_H_size);
+}
+
+.page1 p {
+    font-size: var(--font_T_size);
+    font-family: 'curve';
+    margin-left: 5px;
+
+}
+
+.page1 span {
+    color: var(--font_color_2);
+
+}
+
+.page1 #form {
+    width: 100%;
+    height: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+#form input {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 6px;
+    text-transform: lowercase;
+    outline: none;
+    border: none;
+    color: #0F0343;
+    font-weight: 400;
+}
+
+.page1 .btn {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.page1 .btn button {
+    width: var(--btn_width);
+    height: 100%;
+    background: var(--button_color);
+    outline: none;
+    border: none;
+    font-family: "curve", sans-serif;
+    font-size: var(--font_T_size);
+    border-radius: 24px;
+    color: white;
+}
+
+.page1 .cat-gif {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    padding-top: 2vw;
+}
+
+.page1 .cat-gif .text p {
+    font-size: var(--font_H_size);
+    line-height: 8vw;
+    color: var(--card-text-color);
+}
+
+.page1 .cat-gif .cat {
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    left: 50%;
+}
+
+.page1 .cat img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(1);
+}
+
+.page2 {
+    width: var(--page_width);
+    height: var(--page_height);
+    color: white;
+    position: relative;
+    display: none;
+
+}
+
+.page2 h1 {
+    font-size: var(--font_H_size);
+    margin-left: 4vw;
+}
+
+.page2 p {
+    font-size: var(--font_T_size);
+    font-family: 'curve';
+    margin-left: 5vw;
+
+}
+
+.page2 span {
+    color: var(--font_color_2);
+
+}
+
+.page2 .cat-gif {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 0;
+    left: 55%;
+}
+
+.page2 .cat-gif img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.page2 .card {
+    width: 90%;
+    height: 50%;
+    background: var(--card_color);
+    margin: 15vw 5vw;
+    border-radius: 10px;
+    position: relative;
+}
+
+.page2 .card .cake-div {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page2 .cake-div {
+    position: relative;
+
+}
+
+.page2 .cake-div img {
+    position: absolute;
+    width: 25vw;
+}
+
+.page2 .cake-div img:nth-child(2) {
+    left: 20%;
+    top: 45%;
+}
+
+.page2 .cake-div img:nth-child(1) {
+    transform: scaleX(-1);
+}
+
+.page2 .cake-div img:nth-child(3) {
+    right: 20%;
+    top: 55%;
+    transform: scaleX(-1);
+
+}
+
+.page2 .text {
+    margin-top: 5vw;
+    padding: 3vw;
+}
+
+.page2 .card .text h4 {
+    font-size: 5vw;
+    color: var(--card-text-color);
+
+}
+
+.page2 .btn {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.page2 .btn button {
+    width: var(--btn_width);
+    height: 100%;
+    background: var(--button_color);
+    outline: none;
+    border: none;
+    font-family: "curve", sans-serif;
+    font-size: var(--font_T_size);
+    border-radius: 24px;
+    color: white;
+}
+
+.page3 {
+    width: var(--page_width);
+    height: var(--page_height);
+    color: white;
+    position: relative;
+    display: none
+}
+
+.page3 h1 {
+    font-size: var(--font_H_size);
+    margin-left: 4vw;
+}
+
+.page3 p {
+    font-size: var(--font_T_size);
+    font-family: 'curve';
+    margin-left: 5vw;
+
+}
+
+.page3 span {
+    color: var(--font_color_2);
+
+}
+
+.page3 .cat-gif {
+    position: absolute;
+    width: 50%;
+    height: 10vh;
+    top: 0;
+    left: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.cat-gif img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 90%;
+    transform: scaleX(-1);
+}
+
+.page3 .card {
+    width: 90%;
+    height: 50%;
+    background: var(--card_color);
+    margin: 15vw 5vw;
+    border-radius: 10px;
+    position: relative;
+}
+
+.page3 .cake-div {
+
+    width: 100%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.page3 .cake-div img {
+    transform: scaleX(1);
+
+}
+
+.page3 .card .text {
+    text-align: center;
+    padding: 2vw;
+    color: var(--card-text-color);
+    font-size: var(--font_T_size);
+}
+
+.page3 .btn {
+    padding-left: 7vw;
+    padding-right: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.page3 .btn button {
+    width: 30vw;
+    height: 100%;
+    background: var(--button_color);
+    outline: none;
+    border: none;
+    font-family: "curve", sans-serif;
+    font-size: var(--font_T_size);
+    border-radius: 24px;
+    color: white;
+
+}
+
+.agree {
+    width: var(--page_width);
+    height: var(--page_height);
+    color: white;
+    position: relative;
+    display: none;
+}
+
+.agree h1 {
+    font-size: var(--font_H_size);
+    margin-left: 4vw;
+}
+
+.agree span {
+    color: var(--font_color_2);
+    font-family: "curve";
+    font-weight: normal;
+
+}
+
+.agree .text {
+    line-height: 4vh;
+    font-size: 7vw;
+    text-align: center;
+    color: var(--card-text-color);
+}
+
+.agree .text span {
+    color: var(--font_color_2);
+    font-family: "curve";
+    font-size: 9vw;
+
+
+}
+
+.agree .card {
+    width: 90%;
+    height: 50%;
+    background: var(--card_color);
+    margin: 15vw 5vw;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.agree .text-2 {
+    text-align: center;
+}
+
+.agree .text-2 h1 {
+    text-align: center;
+    font-size: 7vw;
+    color: var(--card-text-color);
+}
+
+.agree .cat-gif {
+    position: relative;
+    display: flex;
+}
+
+.agree .cat-gif div {
+    width: 50%;
+    height: 20%;
+}
+
+.agree .cat-gif img {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+}
+
+.agree .cat-gif div:nth-child(1) {
+    transform: scaleX(-1);
+}
+
+
+
+
+
+
+
+
+.dont-agree {
+    width: var(--page_width);
+    height: var(--page_height);
+    color: white;
+    position: relative;
+    display: none;
+}
+
+.dont-agree h1 {
+    font-size: var(--font_H_size);
+    margin-left: 4vw;
+}
+
+.dont-agree p {
+    font-size: var(--font_T_size);
+    font-family: 'curve';
+    margin-left: 5px;
+
+}
+
+.dont-agree span {
+    color: var(--font_color_2);
+    font-family: "curve";
+    font-weight: normal;
+
+}
+
+.dont-agree .text {
+    line-height: 4vh;
+    text-align: center;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.dont-agree .text p {
+    font-family: poppins;
+
+}
+
+.dont-agree .text span {
+    color: var(--font_color_2);
+    font-family: "curve";
+    font-size: 9vw;
+
+
+}
+
+.dont-agree .card {
+    width: 90%;
+    height: 90vw;
+    background: var(--card_color);
+    margin: 15vw 5vw;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 4vw;
+
+}
+
+.dont-agree .text-2 {
+    text-align: center;
+}
+
+.dont-agree .text-2 h1 {
+    text-align: center;
+    font-size: 7vw;
+    color: var(--card-text-color);
+}
+
+.dont-agree .rq-code {
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.rq-code img {
+    object-fit: cover;
+    width: 60%;
+    height: 100%;
+}
+
+.dont-agree .cat-gif {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.cat-gif img {
+    object-fit: cover;
+    width: 40%;
+    height: 120%;
+
+}
+
+
+
+.spl {
+    width: var(--page_width);
+    height: var(--page_height);
+    color: white;
+    position: relative;
+    display: none;
+}
+
+.spl h1 {
+    font-size: var(--font_H_size);
+    margin-left: 4vw;
+}
+
+.spl p {
+    font-size: var(--font_T_size);
+    font-family: 'curve';
+    margin-left: 5vw;
+
+}
+
+.spl span {
+    color: var(--font_color_2);
+
+}
+
+.spl .cat-gif {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 0;
+    left: 55%;
+}
+
+.spl .cat-gif img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.spl .card {
+    width: 90%;
+    height: 50%;
+    background: var(--card_color);
+    margin: 15vw 5vw;
+    border-radius: 10px;
+    position: relative;
+}
+
+.spl .card .cake-div {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spl .cake-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spl .cake-div img {
+    height: 50vw;
+    margin-left: 15vw;
+}
+
+.spl .text {
+    margin-top: 5vw;
+    padding: 3vw;
+}
+
+.spl .text h4 {
+    font-size: 5vw;
+    color: var(--card-text-color);
+
+}
+
+.spl .btn {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.spl .btn button {
+    width: var(--btn_width);
+    height: 100%;
+    background: var(--button_color);
+    outline: none;
+    border: none;
+    font-family: "curve", sans-serif;
+    font-size: var(--font_T_size);
+    border-radius: 24px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.spl-page2 {
+    width: var(--page_width);
+    height: var(--page_height);
+    color: white;
+    position: relative;
+    display: none;
+}
+
+.spl-page2 h1 {
+    font-size: var(--font_H_size);
+    margin-left: 4vw;
+}
+
+.spl-page2 p {
+    font-size: var(--font_T_size);
+    font-family: 'curve';
+    margin-left: 5vw;
+
+}
+
+.spl-page2 span {
+    color: var(--font_color_2);
+
+}
+
+.spl-page2 .cat-gif {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 0;
+    left: 55%;
+}
+
+.spl-page2 .cat-gif img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.spl-page2 .card {
+    width: 90%;
+    height: 50%;
+    background: var(--card_color);
+    margin: 15vw 5vw;
+    border-radius: 10px;
+    position: relative;
+}
+
+.spl-page2 .card .cake-div {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spl-page2 .cake-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spl-page2 .cake-div img {
+    height: 50vw;
+    margin-left: 15vw;
+}
+
+.spl-page2 .text {
+    margin-top: 5vw;
+    height: 100%;
+    padding: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.spl-page2 .text h4 {
+    font-size: 7vw;
+    color: white;
+
+}
+
+.spl-page2 .text span {
+    font-family: 'curve';
+    font-weight: normal;
+}
+
+.spl-page2 .btn {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.spl-page2 .btn button {
+    width: var(--btn_width);
+    height: 100%;
+    background: var(--button_color);
+    outline: none;
+    border: none;
+    font-family: "curve", sans-serif;
+    font-size: var(--font_T_size);
+    border-radius: 24px;
+    color: white;
+}
+
+
+
+
+.spl-page3 {
+    width: var(--page_width);
+    height: var(--page_height);
+    color: white;
+    position: relative;
+    display: none;
+}
+
+.spl-page3 h1 {
+    font-size: var(--font_H_size);
+    margin-left: 4vw;
+}
+
+.spl-page3 p {
+    font-size: var(--font_T_size);
+    font-family: 'curve';
+    margin-left: 5vw;
+
+}
+
+.spl-page3 span {
+    color: var(--font_color_2);
+    font-family: "curve";
+    font-weight: normal;
+    font-size: 6vw;
+
+}
+
+.spl-page3 .cat-gif {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    top: 0;
+    left: 55%;
+}
+
+.spl-page3 .cat-gif img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.spl-page3 .card {
+    width: 90%;
+    height: 50%;
+    background: var(--card_color);
+    margin: 15vw 5vw;
+    border-radius: 10px;
+    position: relative;
+}
+
+.spl-page3 .card .cake-div {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spl-page3 .cake-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spl-page3 .cake-div img {
+    height: 50vw;
+
+}
+
+.spl-page3 .text {
+    margin-top: 5vw;
+    padding: 3vw;
+
+}
+
+.spl-page3 .text h4 {
+    font-size: 5vw;
+    color: var(--card-text-color);
+
+}
+
+.spl-page3 .btn {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+    gap: 2vw;
+}
+
+.spl-page3 .btn button {
+    width: 29vw;
+    height: 100%;
+    background: var(--button_color);
+    outline: none;
+    border: none;
+    font-family: "curve", sans-serif;
+    font-size: 3.5vw;
+    border-radius: 24px;
+    color: white;
+    padding: 1vw
+}
+
+.spl-page4 {
+    width: 90%;
+    height: 70%;
+    position: relative;
+    display: none;
+}
+
+.spl-page4 h1 {
+    color: white;
+    font-size: 6vw;
+}
+
+.spl-page4 span {
+    color: var(--font_color_2);
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+.spl-page4 .btn-holder {
+    width: 90%;
+    margin-top: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spl-page4 .btn-holder button {
+    width: 40%;
+    height: 50%;
+    padding: 2vw;
+    border-radius: 24px;
+    font-size: 4vw;
+    font-family: "curve";
+    color: white;
+    background: var(--button_color);
+    outline: none;
+    border: none;
+    margin-left: 10vw;
+}
+
+.spl-page4 .gif {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif img {
+    object-fit: cover;
+    width: 80%;
+    height: 90%;
+}
+
+
+.spl-page5 {
+    display: none;
+}
+
+.spl-page5 h1 {
+    font-size: var(--font_H_size);
+    color: white;
+}
+
+.spl-page5 span {
+    font-size: 15vw;
+    font-family: 'curve';
+    color: var(--font_color_2);
+    line-height: 3vh;
+}
+
+.spl-page5 .gif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spl-page6 {
+    display: none;
+}
+
+.spl-page6 h1 {
+    font-size: var(--font_H_size);
+    color: white;
+}
+
+.spl-page6 span {
+    font-size: 15vw;
+    font-family: 'curve';
+    color: var(--font_color_2);
+    line-height: 2vh;
+}
+
+.spl-page6 .gif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+@media (max-width:500px) {
+    .pc-port-text {
+        display: none;
+    }
+    .page1{
+        display: block;
+    }
+    .page2{
+        display: none;
+    }
+    .page3{
+        display: none;
+    }
+    .page4{
+        display: none;
+    }
+    .page5{
+        display: none;
+    }
+    .spl-page1 {
+        display: none;
+    }
+    .spl-page2 {
+        display: none;
+    }
+    .spl-page3 {
+        display: none;
+    }
+    .spl-page4 {
+        display: none;
+    }
+    .spl-page5 {
+        display: none;
+    }
+    .spl-page6 {
+        display: none;
+    }
+}
