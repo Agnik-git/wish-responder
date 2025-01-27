@@ -48,7 +48,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+button{
+    transition: 0.5s all ease;
+}
+button:focus{
+    transform:scale(0.9);
+}
 .pc-port-text {
     display: block;
     color: white;
