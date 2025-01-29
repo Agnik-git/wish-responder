@@ -1,7 +1,7 @@
 document.documentElement.setAttribute('data-theme', 'light');
 
-const arr = ["agnik ", "rishi ", "ankit ", "disha ", "neha ", "salini ", "dipankar ", "abhrojit ", "abhrajit ", "ahana ", "aahaanaa ", "ahanaa ", "aahaanaa ", "aaahaaanaaa ", "gayatri "];
-const arr2 = ["agnik", "rishi", "ankit", "disha", "neha", "salini", "dipankar", "abhrojit", "abhrajit", "ahana", "aahaanaa", "ahanaa", "aahaanaa", "aaahaaanaaa", "gayatri"]
+const arr = ["ahana ", "aahaanaa ", "ahanaa ", "aahaanaa ", "aaahaaanaaa "];
+const arr2 = ["ahana", "aahaanaa", "ahanaa", "aahaanaa", "aaahaaanaaa"]
 //input-text
 
 const inputtext = document.getElementById("inputtext");
